@@ -1,18 +1,17 @@
 <!--
  * @Author: Lvhz
- * @Date: 2020-08-31 10:09:23
+ * @Date: 2020-09-14 18:02:55
  * @Descripttion: Descripttion
 -->
 <template>
-  <div class="home">
-    首页home
-  </div>
+  <div></div>
 </template>
 
 <script>
 export default {
-  name: 'Home',
-  components: {
-  }
 };
 </script>
+
+<style lang="scss" scoped>
+
+</style>

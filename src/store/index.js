@@ -6,6 +6,7 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 import user from './user.js';
+import permission from './permission.js';
 
 Vue.use(Vuex);
 
@@ -27,14 +28,17 @@ Vue.use(Vuex);
 // 模块化
 export default new Vuex.Store({
   modules: {
-    user
+    user,
+    permission
+  },
+  getters: {
+    roles: state => state.user.roles,
+    permission_routes: state => state.permission.routes
   }
   // state: {
   // },
   // mutations: {
   // },
   // actions: {
-  // },
-  // modules: {
   // }
 });

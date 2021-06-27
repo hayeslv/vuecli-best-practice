@@ -7,15 +7,15 @@ const path = require('path');
 // 将传入的相对路径转换为绝对路径
 const resolve = dir => path.join(__dirname, dir);
 
-const port = 7070;
+const port = 8080;
 const title = 'vue项目最佳实践';
 
 // 查看当前项目下的所有规则：vue inspect --rules
 // 查看某个规则的具体规则：vue inspect --rule vue
 
 module.exports = {
-  publicPath: process.env.VUE_APP_BASEURL,
-  // publicPath: './',
+  // publicPath: process.env.VUE_APP_BASEURL,
+  publicPath: './',
   configureWebpack: {
     name: title
   },
